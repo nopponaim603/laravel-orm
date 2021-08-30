@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,8 @@ Route::get('/', function () {
 Route::get('/add-user', [UserController::class,'insertRecord']);
 
 Route::get('/get-phone/{id}',[UserController::class,'fetchPhoneByUser']);
+
+Route::get('/add-post', [PostController::class,'addPost']);
+Route::get('/add-comment/{id}', [PostController::class,'addComment']);
+
+Route::get('/get-comments/{id}',[PostController::class,'getCommentsByPost']);
