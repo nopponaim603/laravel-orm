@@ -21,4 +21,9 @@ class UserController extends Controller
         $user->phone()->save($phone);
         return "Record has been create successfully!";
     }
+
+    public function fetchPhoneByUser($id){
+        $phone = User::find($id)->phone;
+        return $phone;
+    }
 }
