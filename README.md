@@ -44,6 +44,11 @@ $ php artisan key:generate
 
 Add your database credentials to the necessary `env` fields
 
+Using mysql and Create DB name
+```
+laravel_orm
+```
+
 Migrate the application
 ```
 $ php artisan migrate
