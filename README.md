@@ -1,6 +1,3 @@
-# How Laravel Implements MVC and how to use it
-This is a demo application showing how to implement MVC in your Laravel Applications. You can read about how it was created [on Pusher's blog](https://blog.pusher.com/laravel-mvc-use/).
-
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -14,17 +11,19 @@ What things you need to install the software.
 * Laravel Valet (optional).
 * A webserver like Nginx or Apache.
 
+* Base on Laravel 8.0
+
 ### Install
 Clone the git repository on your computer
 ```
-$ git clone https://github.com/neoighodaro-articles/laravel-mvc-demo.git
+$ git clone https://github.com/nopponaim603/laravel-orm.git
 ```
 
 You can also download the entire repository as a zip file and unpack in on your computer if you do not have git
 
 After cloning the application, you need to install it's dependencies. 
 ```
-$ cd laravel-mvc-demo
+$ cd laravel-orm-demo
 $ composer install
 ```
 
@@ -68,46 +67,46 @@ $ php artisan serve
 
 Add Data
 ```
-"http://127.0.0.1:8000/add-user"
+http://127.0.0.1:8000/add-user
 ```
 
 Show Data
 ```
-"http://127.0.0.1:8000/get-phone/1"
+http://127.0.0.1:8000/get-phone/1
 ```
 
 ### One to Many
 
 Add Data
 ```
-"http://127.0.0.1:8000/add-post"
+http://127.0.0.1:8000/add-post
 ```
 
 ```
-"http://127.0.0.1:8000/add-comment/1"
+http://127.0.0.1:8000/add-comment/1
 ```
 
 Show Data
 ```
-"http://127.0.0.1:8000/get-comments/1"
+http://127.0.0.1:8000/get-comments/1
 ```
 
 ### Many to Many Example
 
 Add Data
 ```
-"http://127.0.0.1:8000/add-role"
+http://127.0.0.1:8000/add-role
 ```
 
 ```
-"http://127.0.0.1:8000/add-users"
+http://127.0.0.1:8000/add-users
 ```
 
 Show Data
 ```
-"http://127.0.0.1:8000/rolesbyuser/{$user_id}" 
+http://127.0.0.1:8000/rolesbyuser/{$user_id}
 ```
 
 ```
-"http://127.0.0.1:8000/usersbyrole/{$role_id}"
+http://127.0.0.1:8000/usersbyrole/{$role_id}
 ```
